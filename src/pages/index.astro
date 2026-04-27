@@ -1,0 +1,47 @@
+---
+import '../styles/tailwind.css';
+
+import { Font } from 'astro:assets';
+---
+
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="icon" href="/favicon.ico">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>IzpiExchange</title>
+
+		<Font cssVariable="--font-sora" />
+	</head>
+	<body class="font-sora p-12">
+		<main class="max-w-5xl w-full mx-auto">
+			<nav class="flex justify-center sm:justify-between items-center">
+				<a
+					href="/"
+					class="inline-flex items-center gap-2 hover:opacity-75 transition-opacity"
+				>
+					<img class="size-12.5" alt="Logo de IzpiExchange" src="images/Logo.avif">
+					<span class="text-2xl font-bold">IzpiExchange</span>
+				</a>
+				<a
+					class="sm:grid bg-black hover:opacity-75 transition-opacity cursor-pointer rounded-full size-fit px-4 py-2 text-sm text-white font-bold hidden place-items-center"
+					>Descargar</a
+				>
+			</nav>
+			<section class="p-25 grid place-content-center animate-fade-in-up gap-6">
+				<h1 class="text-balance text-7xl font-bold text-center max-w-3xl">
+					Damos vida a lo que ya no utilizas
+				</h1>
+				<section class="mx-auto">
+					<a
+						class="grid bg-black hover:opacity-75 transition-opacity cursor-pointer rounded-full size-fit px-4 py-2 text-sm text-white font-bold place-items-center"
+						>Descargar Aplicación</a
+					>
+				</section>
+			</section>
+		</main>
+	</body>
+</html>
