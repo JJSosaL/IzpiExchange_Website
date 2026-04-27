@@ -24,7 +24,8 @@
 		"biome:check": "biome check",
 		"biome:ci": "biome ci",
 		"biome:write": "biome check --write",
-		"docker:build": "docker build --tag website --file Dockerfile ."
+		"docker:build": "docker build --tag website --file Dockerfile .",
+		"docker:run": "docker run -d -p 4321:4321 website"
 	},
 	"type": "module",
 	"version": "0.0.1"
