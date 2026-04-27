@@ -1,6 +1,7 @@
 {
 	"author": "JJSosaL",
 	"dependencies": {
+		"@astrojs/node": "10.0.6",
 		"astro": "6.1.9"
 	},
 	"devDependencies": {
@@ -19,9 +20,11 @@
 		"astro:build": "astro build",
 		"astro:dev": "astro dev",
 		"astro:preview": "astro preview",
+		"astro:start": "pnpm astro start",
 		"biome:check": "biome check",
 		"biome:ci": "biome ci",
-		"biome:write": "biome check --write"
+		"biome:write": "biome check --write",
+		"docker:build": "docker build --tag website --file Dockerfile ."
 	},
 	"type": "module",
 	"version": "0.0.1"
