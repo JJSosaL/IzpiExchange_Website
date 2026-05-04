@@ -1,8 +1,5 @@
 FROM oven/bun
 
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-
 WORKDIR /app
 
 COPY . .
